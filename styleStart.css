@@ -23,18 +23,18 @@ min-height: 100%;
 .content > main
 {
 	border: 1px solid darkgray;
-	flex: 2;
+	flex: 6;
 	order: 2;
-	min-height: 80vh;
+	min-height: 90vh;
 }
 
 .left-sidebar
 {
 	order:1;
-	flex:1;
+	flex:0.8;
 }
 .right-sidebar{
-	flex: 1;
+	flex: 0.8;
 	order: 3;
 }
 
