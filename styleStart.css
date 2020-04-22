@@ -1,15 +1,26 @@
-.video
-{
-opacity: 0.8;
-position: fixed;
-right: 0;
-bottom: 0;
-min-width: 100%;
-min-height: 100%;
+
+/* Style the video: 100% width and height to cover the entire window */
+.video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%
+  width: 100%;
+
+}
+
+/* Add some content at the bottom of the video/page */
+.content  {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+
 }
 
 .mainBlock
 {
+	
 	border:1px solid darkgray;
 	padding: 4px;
 	min-height: 100%;
@@ -18,47 +29,42 @@ min-height: 100%;
 main > h1
 {
 
-	color:black;
+	color:white;
 	font-style: italic;
 	margin: auto;
 	margin-left: 35%;
 }
 
-.container > header
-{	
-	background-color: lightgrey;
-	flex:; 1;
-	border:1px solid darkgray;
-}
-
 .mainBlock > main
 {
 	border: 1px solid darkgray;
-	flex: 6;
+	flex: 2;
 	order: 2;
 	min-height: 90vh;
 }
 
 .left-sidebar
 {
+	border: 1px white;
+	padding: 1px;
 	order:1;
-	flex:0.8;
+	flex:1;
 }
 .right-sidebar{
-	flex: 0.8;
+	flex: 1;
 	order: 3;
 }
 
-/* * {
+ * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}*/
+}
 
 .tabs > label {
-	border: 1px solid black;
+	border: 2px green;
 	border-radius: 4px 4px 4px 4px;
-	padding: 0.2em 0.2em;
+	padding: 0.5em 0.5em;
 	margin: 0.5em;
 }
 
@@ -67,22 +73,36 @@ main > h1
 	background-color: blue;
 }
 
-.container, .mainBlock
+
+
+.tabs > input[type="radio"] 
+{
+	display: none;
+}
+
+
+
+.tabEffect, .mainBlock
 {
 	display: flex;
 	flex-direction: column;
 }
 
 
-/*.tabs > input[type="radio"] 
-{
-	display: none;
-}*/
 
-.content > * { display: none; }
+header
+{	
+	opacity: 0.7;
+	flex:2;
+	border:1px solid white;
+	background-color: darkgray;
+}
 
 
-#tab1:checked ~ .content > #content1
+.tabEffect > * { display: none; }
+
+
+#tab1:checked ~ .tabEffect > #content1
 {
 	display: block;
 }
