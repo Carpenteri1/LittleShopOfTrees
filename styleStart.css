@@ -87,6 +87,12 @@ main > h1
 	display: block;
 }
 
+h2 
+{
+	margin-top: 10em;
+	margin-left: 20em;
+}
+
 
 @media all and (min-width: 768px) {
     .mainBlock {
