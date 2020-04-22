@@ -8,19 +8,30 @@ min-width: 100%;
 min-height: 100%;
 }
 
-.content
+.mainBlock
 {
 	border:1px solid darkgray;
 	padding: 4px;
 	min-height: 100%;
 }
 
-.content > header
-{	
-	background-color: lightgrey;
+main > h1
+{
+
+	color:black;
+	font-style: italic;
+	margin: auto;
+	margin-left: 35%;
 }
 
-.content > main
+.container > header
+{	
+	background-color: lightgrey;
+	flex:; 1;
+	border:1px solid darkgray;
+}
+
+.mainBlock > main
 {
 	border: 1px solid darkgray;
 	flex: 6;
@@ -38,19 +49,47 @@ min-height: 100%;
 	order: 3;
 }
 
-* {
+/* * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}*/
+
+.tabs > label {
+	border: 1px solid black;
+	border-radius: 4px 4px 4px 4px;
+	padding: 0.2em 0.2em;
+	margin: 0.5em;
 }
-.container, .content
+
+
+.tabs > :checked + label {
+	background-color: blue;
+}
+
+.container, .mainBlock
 {
 	display: flex;
 	flex-direction: column;
 }
 
+
+/*.tabs > input[type="radio"] 
+{
+	display: none;
+}*/
+
+.content > * { display: none; }
+
+
+#tab1:checked ~ .content > #content1
+{
+	display: block;
+}
+
+
 @media all and (min-width: 768px) {
-    .content {
+    .mainBlock {
         flex-direction: row;
         flex-wrap: wrap;
     }
