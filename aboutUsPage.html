@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>About Us - Labration 1</title>
+	 	<link rel="icon shortcut" href="assets/icons/icon.ico" type = "image/ico" />
+</head>
+<body>
+	<div class = "content">
+		<header>
+			<div class = "tabs">
+				<input type="radio" id="tab1" onClick="productsPage()" name="tab" value="Products">
+				<label for="tab1">Products</label>
+				<input type="radio" id="tab2" onClick="startPage()" name="tab" value="Start Page" >
+				<label for="tab2">Start Page</label>
+				</div>
+			<div class="tabEffect">
+				<div id="content1">Du valde flik 1</div>
+				<div id="content2">Du valde flik 2</div>
+			</div>		
+		</header>
+		<div class = "mainBlock"><main></main></div>
+		<footer>
+			Auther: Niclas Timle 
+			<br>GitHub Page: https://github.com/Carpenteri1 
+			<br>School: Campus-Varberg SUT-19 
+		</footer>
+	</div>
+<script> 
+function startPage()
+{
+	location.replace("startPage.html")
+}
+function productsPage()
+{
+	location.replace("productsPage.html")
+}
+</script>
+</body>
+</html>

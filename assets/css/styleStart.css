@@ -10,49 +10,54 @@
 }
 
 /* Add some content at the bottom of the video/page */
-.content  {
+.content  
+{
   position: absolute;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
+  background-color: black;
 
 }
 
 .mainBlock
 {
-	
-	border:1px solid darkgray;
-	padding: 4px;
 	min-height: 100%;
+	background-color: white;
+	border-color: grey;
+	border-radius: 1px; 
 }
-
 main > h1
 {
 
-	color:white;
+	color:black;
 	font-style: italic;
 	margin: auto;
 	margin-left: 35%;
 }
 
+
 .mainBlock > main
 {
-	border: 1px solid darkgray;
-	flex: 2;
+	flex: 1;
 	order: 2;
 	min-height: 90vh;
+	color:black;
 }
 
 .left-sidebar
 {
-	border: 1px white;
-	padding: 1px;
+	background-image: url(images/tree.jpg);
 	order:1;
 	flex:1;
+
+
 }
 .right-sidebar{
 	flex: 1;
 	order: 3;
+	color:black;
+	background-image: url(images/tree.jpg);
 }
 
  * {
@@ -69,13 +74,14 @@ main > h1
 }
 
 
-.tabs > :checked + label {
-	background-color: blue;
+.tabs > :checked + label 
+{	
+	background-color: green;
 }
 
 
 
-.tabs > input[type="radio"] 
+.tabs > *[type="radio"] 
 {
 	display: none;
 }
@@ -89,12 +95,9 @@ main > h1
 }
 
 
-
-header
-{	
-	opacity: 0.7;
+ header
+{
 	flex:2;
-	border:1px solid white;
 	background-color: darkgray;
 }
 
@@ -102,7 +105,8 @@ header
 .tabEffect > * { display: none; }
 
 
-#tab1:checked ~ .tabEffect > #content1
+#tab1:checked ~ .tabEffect > #content1,
+#tab2:checked ~ .tabEffect > #content2
 {
 	display: block;
 }
@@ -113,8 +117,13 @@ h2
 	margin-left: 20em;
 }
 
+.content > footer
+{
+	color:white;
+	background-color: black;
+}
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 720px) {
     .mainBlock {
         flex-direction: row;
         flex-wrap: wrap;
