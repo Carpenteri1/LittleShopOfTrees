@@ -1,0 +1,107 @@
+
+/* Style the video: 100% width and height to cover the entire window */
+/*.video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%
+  width: 100%;
+
+}*/
+
+/* Add some content at the bottom of the video/page */
+
+.content
+{	
+	display: flex;
+	flex-direction: row;
+	background-image: url("../img/woods.jpg");
+	background-size: cover;
+	image-rendering: smooth;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+}
+main
+{
+	color: black;
+	height: 50em;
+	min-width: 40em;
+	background-color: white;
+	flex: 1;
+	order: 2;
+	border:2px solid black;
+	border-bottom: 0;
+	border-top: 0;
+}
+main > h1
+{
+
+	color:black;
+	font-style: italic;
+	margin-top: 2em;
+	margin-left: 1em;
+}
+
+main > p
+{
+	color:black;
+	font-style: italic;
+	margin-top: 2em;
+	margin-left: 2em;
+}
+
+
+.left-sidebar
+{
+	order:1;
+	flex:1;
+}
+.right-sidebar
+{
+	flex: 1;
+	order: 3;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ header
+{
+	line-height: 3;
+	flex:2;
+	background-color: darkgray;
+	border:2px solid black;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.tabs > input 
+{
+	border: 2px green;
+	border-radius: 4px 4px 4px 4px;
+	padding: 0.5em 0.5em;
+	
+}
+
+.container > footer
+{
+	color:white;
+	background-color: black;
+	font-size: 0.7em;
+	font-family: serif;	
+}
+
+@media all and (min-width: 720px) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }

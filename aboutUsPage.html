@@ -3,37 +3,36 @@
 <head>
 		<title>About Us - Labration 1</title>
 	 	<link rel="icon shortcut" href="assets/icons/icon.ico" type = "image/ico" />
+	 	<link rel="stylesheet" type="text/css" href="assets/css/styleAbout.css">
 </head>
 <body>
-	<div class = "content">
+	<div class = "container">
 		<header>
-			<div class = "tabs">
-				<input type="radio" id="tab1" onClick="productsPage()" name="tab" value="Products">
-				<label for="tab1">Products</label>
-				<input type="radio" id="tab2" onClick="startPage()" name="tab" value="Start Page" >
-				<label for="tab2">Start Page</label>
-				</div>
-			<div class="tabEffect">
-				<div id="content1">Du valde flik 1</div>
-				<div id="content2">Du valde flik 2</div>
-			</div>		
+				<div class = "tabs">
+				<input type="button" id="tab1" 
+				onclick="window.location.href='startPage.html';"value="Main Page">
+
+				<input type="button" id="tab2" 
+				onclick="window.location.href='productsPage.html';" value="Products">
+				</div>	
+
 		</header>
-		<div class = "mainBlock"><main></main></div>
-		<footer>
-			Auther: Niclas Timle 
-			<br>GitHub Page: https://github.com/Carpenteri1 
-			<br>School: Campus-Varberg SUT-19 
-		</footer>
-	</div>
-<script> 
-function startPage()
-{
-	location.replace("startPage.html")
-}
-function productsPage()
-{
-	location.replace("productsPage.html")
-}
-</script>
-</body>
+		<div class ="content">
+		<main>
+				<h1>What we do</h1>
+				<p>We at <strong>Little Shop Of Trees</strong> are a couple of friends who aim to bring one of the most basic human rights,<br> 
+				The right to breathe, and therefor we argue that its every humans right to own its very own tree.<br>
+				If everyone took there time to ordered one tree from our store, we would save the planet today.
+				</p>
+		</main>
+		<aside class="left-sidebar"></aside>
+		<aside class="right-sidebar"></aside>
+		</div>
+	 <footer>
+	 	Auther: Niclas Timle 
+	 	<br>GitHub Page: https://github.com/Carpenteri1 
+	 	<br>School: Campus-Varberg SUT-19
+	 	<br>Labration 1 
+	 </footer>  
+	</div></body>
 </html>

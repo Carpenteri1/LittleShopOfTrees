@@ -1,130 +1,129 @@
 
 /* Style the video: 100% width and height to cover the entire window */
-.video{
+/*.video{
   position: fixed;
   right: 0;
   bottom: 0;
   height: 100%
   width: 100%;
 
-}
+}*/
 
 /* Add some content at the bottom of the video/page */
-.content  
+
+
+body
 {
-  position: absolute;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  background-color: black;
+	background-image: url("../img/woods.jpg");
+	background-size: cover;
+	image-rendering: smooth;
+}
+
+.content
+{
+
+	height: 34em;
+}
+
+.flex-container
+ {
+ 	margin-left: 2em; 	
+ 	margin-top: 10em;
+ 	display: flex;
+ 	flex-wrap: nowrap;
 
 }
 
-.mainBlock
-{
-	min-height: 100%;
-	background-color: white;
-	border-color: grey;
-	border-radius: 1px; 
-}
-main > h1
-{
+.flex-container > input {
+  background-color: #f1f1f1;
+  width: 20em;
+  height: 20em;
+  margin-top: 1em;
+  margin: 0.8em;
+  text-align: center;
+  font-size: 1.9em;
 
-	color:black;
+}
+
+.flex-container > #tab1
+{
+	background-image: url("../img/products.jpg");
+	background-size: 680px 500px;
+	background-position: top;
+	image-rendering: smooth;
+	margin-top: auto;
+	margin-left: 2em;
+	color: lightgreen;
+	font-size: 1em;
 	font-style: italic;
-	margin: auto;
-	margin-left: 35%;
 }
 
-
-.mainBlock > main
+.flex-container > #tab2
 {
-	flex: 1;
-	order: 2;
-	min-height: 90vh;
-	color:black;
+	background-image: url("../img/aboutUs.jpg");
+	background-size: 450px 600px;
+	background-position: top;
+	image-rendering: smooth;
+	margin-top: auto;
+	margin-left: 2em;
+	color: lightgreen;
+	font-size: 1em;
+	font-style: italic;
 }
 
-.left-sidebar
+.flex-container > #tab3
 {
-	background-image: url(images/tree.jpg);
-	order:1;
-	flex:1;
-
-
-}
-.right-sidebar{
-	flex: 1;
-	order: 3;
-	color:black;
-	background-image: url(images/tree.jpg);
+	background-image: url("../img/events.jpg");
+	background-size: 450px 500px;
+	background-position: top;
+	margin-left: 2em;
+	image-rendering: smooth;
+	color: lightgreen;
+	font-size: 1em;
+	font-style: italic;
 }
 
- * {
+.flex-container > #tab4
+{
+	background-image: url("../img/contactUs.jpg");
+	background-size: 450px 480px;
+	background-position: top;
+	image-rendering: smooth;
+	margin-top: auto;
+	margin-left: 2em;
+	color: lightgreen;
+	font-size: 1em;
+	font-style: italic;
+}
+
+
+.flex-container > #tab1:hover,
+.flex-container > #tab2:hover,
+.flex-container > #tab3:hover,
+.flex-container > #tab4:hover
+{
+	font-size: 1.5em;
+}
+
+
+
+footer
+{
+	margin-top: 1em;
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+	font-size: 0.7em;
+}
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.tabs > label {
-	border: 2px green;
-	border-radius: 4px 4px 4px 4px;
-	padding: 0.5em 0.5em;
-	margin: 0.5em;
-}
-
-
-.tabs > :checked + label 
-{	
-	background-color: green;
-}
-
-
-
-.tabs > *[type="radio"] 
-{
-	display: none;
-}
-
-
-
-.tabEffect, .mainBlock
-{
-	display: flex;
-	flex-direction: column;
-}
-
-
- header
-{
-	flex:2;
-	background-color: darkgray;
-}
-
-
-.tabEffect > * { display: none; }
-
-
-#tab1:checked ~ .tabEffect > #content1,
-#tab2:checked ~ .tabEffect > #content2
-{
-	display: block;
-}
-
-h2 
-{
-	margin-top: 10em;
-	margin-left: 20em;
-}
-
-.content > footer
-{
-	color:white;
-	background-color: black;
-}
-
-@media all and (min-width: 720px) {
-    .mainBlock {
+@media all and (max-width: 720px) {
+    .container {
         flex-direction: row;
         flex-wrap: wrap;
     }
