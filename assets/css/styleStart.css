@@ -132,3 +132,12 @@ footer
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+ @media all and (max-height: 360em)
+ {.container
+ 	{
+ 		flex-direction: column;
+ 		flex-wrap: wrap;
+ 	}
+
+ }
