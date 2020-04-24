@@ -124,6 +124,6 @@ footer
 
 @media all and (max-width: 720px) {
     .container {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
