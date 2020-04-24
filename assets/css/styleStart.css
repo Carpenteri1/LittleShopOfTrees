@@ -36,7 +36,12 @@ body
 
 .flex-container
  {
- 	border:2px solid red;
+ 	border:2px solid yellow;
+ 	width: 180vh;
+ 	height: 80vh; 
+  	margin:auto;
+  	position: center;
+  	font-size: 1.9em;
  	order:2;
 
 }
@@ -45,9 +50,7 @@ body
 {
 	border:2px solid green;
 	order:3;
-	flex:2;
-	line-height: 3;
-	width: 100%;
+	flex:1;
 }
 footer
 {
@@ -58,17 +61,6 @@ footer
 	font-family: sans-serif;
 	font-size: 0.7em;
 }
-
-.flex-container 
-{
-  border:2px solid yellow;
-  width: 40em;
-  height: 20em; 
-  margin:auto;
-  position: center;
-  font-size: 1.9em;
-}
-
 
 * {
     box-sizing: border-box;
@@ -149,11 +141,11 @@ footer
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .flex-container
+    /*.flex-container
     {
-    	  flex-direction: column;
+    	flex-direction: column;
         flex-wrap: wrap;
-    }
+    }*/
 
 }
    
