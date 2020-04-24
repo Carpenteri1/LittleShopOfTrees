@@ -24,6 +24,7 @@ body
   	display: flex;
 	flex-direction: column;
 	height: 100vh;
+
 }
 
 .atTop
@@ -37,8 +38,8 @@ body
 .flex-container
  {
  	border:2px solid yellow;
- 	width: 180vh;
- 	height: 80vh; 
+ 	width: 100%;
+ 	height: 80%; 
   	margin:auto;
   	position: center;
   	font-size: 1.9em;

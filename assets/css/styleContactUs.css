@@ -11,6 +11,11 @@
 
 /* Add some content at the bottom of the video/page */
 
+body
+{
+	background-color: black;
+}
+
 .content
 {	
 	display: flex;
@@ -28,7 +33,7 @@
 main
 {
 	color: black;
-	height: 50em;
+	height: 40em;
 	min-width: 40em;
 	background-color: white;
 	flex: 1;
