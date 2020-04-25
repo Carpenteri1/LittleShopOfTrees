@@ -23,19 +23,68 @@ body
 	display: flex;
 	flex-direction: column;
 	border:2px solid blue;
-	
+	height: 180vh;
 }
+
+
+ header
+{
+	line-height: 3;
+	flex:3;
+	order:1;
+	background-color: darkgray;
+	border:2px solid black;
+}
+
 .main-content
 {
-	color: black;
+	height: 100%;
 	width: 40%;
- 	max-height: 100%; 
-	background-color: white;
-	order: 3;
+
 	position: center;
 	margin: auto;
+
+	order: 3;
+
+	color: black;
+	background-color: white;
 	border:2px solid yellow;
 }
+
+
+footer
+{	
+	color:white;
+	background-color: red;
+	font-size: 0.7em;
+	font-family: serif;	
+	order: 4;
+	flex:2;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+
+.left-sidebar
+{
+	order:2;
+	flex:1;
+	border:2px solid green;
+	font-size: 3;
+}
+.right-sidebar
+{
+	flex: 1;
+	order: 4;
+	border:2px solid green;
+}
+
+
+/*
 
 .img_left{
 	border:1px solid black;
@@ -67,36 +116,10 @@ body
 }
 
 
-.left-sidebar
-{
-	order:4;
-	flex:1;
-	border:2px solid green;
-	font-size: 3;
-}
-.right-sidebar
-{
-	flex: 1;
-	order: 2;
-	border:2px solid green;
-}
+*/
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-} 
 
- header
-{
-	max-height: 18vh;
-	line-height: 3;
-	flex:2;
-	order:1;
-	background-color: darkgray;
-	border:2px solid black;
-}
-
+/*
 .tabs > form,input 
 {
 	border: 2px green;
@@ -104,25 +127,22 @@ body
 	padding: 0.5em 0.5em;
 	
 }
-
+*/
 .makeSpace
 {
 	height: 10vh;
+	display: table;
+    clear: both;
 }
 
 .makeSmallSpace
 {
 	height: 4vh;
+	display: table;
+    clear: both;
 }
 
-.container > footer
-{	
-	color:white;
-	background-color: black;
-	font-size: 0.7em;
-	font-family: serif;	
-	order: 4;
-}
+
 
 @media all and (min-height: 600px)
 {
