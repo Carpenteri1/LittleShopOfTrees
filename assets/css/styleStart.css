@@ -1,13 +1,13 @@
 
 
 /* Style the video: 100% width and height to cover the entire window */
-/*.video{
+video{
   position: fixed;
   right: 0;
   bottom: 0;
-  height: 100%
-  width: 100%;
-}*/
+  min-width: 100%;
+  min-height: 100%;
+}
 
 /* Add some content at the bottom of the video/page */
 
@@ -23,6 +23,8 @@ body
   	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	width: 100%;
+	position: absolute;
 }
 
 .atTop

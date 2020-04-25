@@ -1,15 +1,10 @@
 
-/* Style the video: 100% width and height to cover the entire window */
-/*.video{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  height: 100%
-  width: 100%;
 
-}*/
-
-/* Add some content at the bottom of the video/page */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}  
 
 body
 {	
@@ -23,7 +18,7 @@ body
 	display: flex;
 	flex-direction: column;
 	border:2px solid blue;
-	height: 180vh;
+
 }
 
 
@@ -31,21 +26,20 @@ body
 {
 	line-height: 3;
 	flex:3;
-	order:1;
+	order:0;
 	background-color: darkgray;
-	border:2px solid black;
+	border:2px solid purple;
 }
 
 .main-content
 {
-	height: 100%;
 	width: 40%;
-
-	position: center;
+	height: 100%
+	position:center;
 	margin: auto;
 
-	order: 3;
-
+	order: 2;
+	flex :1;
 	color: black;
 	background-color: white;
 	border:2px solid yellow;
@@ -62,7 +56,7 @@ footer
 	flex:2;
 }
 
-* {
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -71,7 +65,7 @@ footer
 
 .left-sidebar
 {
-	order:2;
+	order:4;
 	flex:1;
 	border:2px solid green;
 	font-size: 3;
@@ -79,12 +73,12 @@ footer
 .right-sidebar
 {
 	flex: 1;
-	order: 4;
+	order: 0;
 	border:2px solid green;
 }
 
 
-/*
+
 
 .img_left{
 	border:1px solid black;
@@ -116,10 +110,10 @@ footer
 }
 
 
-*/
 
 
-/*
+
+
 .tabs > form,input 
 {
 	border: 2px green;
@@ -127,7 +121,7 @@ footer
 	padding: 0.5em 0.5em;
 	
 }
-*/
+
 .makeSpace
 {
 	height: 10vh;
