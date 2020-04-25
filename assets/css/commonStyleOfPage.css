@@ -11,10 +11,8 @@
 
 /* Add some content at the bottom of the video/page */
 
-.content
+body
 {	
-	display: flex;
-	flex-direction: row;
 	background-image: url("../img/woods.jpg");
 	background-size: cover;
 	image-rendering: smooth;
@@ -24,32 +22,43 @@
 {
 	display: flex;
 	flex-direction: column;
+	border:2px solid blue;
+	
 }
-main
+.main-content
 {
 	color: black;
-	height: 50em;
-	min-width: 40em;
+	width: 40%;
+ 	max-height: 100%; 
 	background-color: white;
-	flex: 1;
-	order: 2;
-	border:2px solid black;
-	border-bottom: 0;
-	border-top: 0;
+	order: 3;
+	position: center;
+	margin: auto;
+	border:2px solid yellow;
 }
-main > h1,h2,h3
-{
 
+.img_left{
+	border:1px solid black;
+	float:left;
+	margin-left:4vh; 
+	margin-top:2em; 
+}
+.img_right
+{
+	border:1px solid black; 
+	float:right;
+	margin-right:4vh; 
+}
+
+.main-content > h1,h2
+{
 	color:black;
 	font-style: italic;
 	margin-top: 2em;
 	margin-left: 1em;
 }
 
-
-
-
-main > p
+.main-content > p,a,h3
 {
 	color:black;
 	font-style: italic;
@@ -60,31 +69,32 @@ main > p
 
 .left-sidebar
 {
-	order:1;
+	order:4;
 	flex:1;
+	border:2px solid green;
+	font-size: 3;
 }
 .right-sidebar
 {
 	flex: 1;
-	order: 3;
-
+	order: 2;
+	border:2px solid green;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+} 
 
  header
 {
+	max-height: 18vh;
 	line-height: 3;
 	flex:2;
+	order:1;
 	background-color: darkgray;
 	border:2px solid black;
-	border-top: 0;
-	border-left: 0;
-	border-right: 0;
 }
 
 .tabs > form,input 
@@ -95,12 +105,32 @@ main > p
 	
 }
 
-.container > footer
+.makeSpace
 {
+	height: 10vh;
+}
+
+.makeSmallSpace
+{
+	height: 4vh;
+}
+
+.container > footer
+{	
 	color:white;
 	background-color: black;
 	font-size: 0.7em;
 	font-family: serif;	
+	order: 4;
+}
+
+@media all and (min-height: 600px)
+{
+	.content
+	{
+		flex-direction: column;
+		flex-wrap: w
+	}
 }
 
 @media all and (min-width: 720px) {
