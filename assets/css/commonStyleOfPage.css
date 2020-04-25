@@ -18,9 +18,7 @@ body
 	display: flex;
 	flex-direction: column;
 	border:2px solid blue;
-	position: absolute;
-	width: 100%;
-
+	position: center;
 }
 
 
@@ -35,23 +33,23 @@ body
 
 .main-content
 {
-	width: 40%;
-	height: 100%
+	
 	position:center;
 	margin: auto;
-
+	width: 40%;
+	height: 100%
 	order: 2;
 	flex :1;
 	color: black;
 	background-color: white;
-	border:2px solid yellow;
+	border:10px solid lime;
 }
 
 
 footer
 {	
 	color:white;
-	background-color: red;
+	background-color: black;
 	font-size: 0.7em;
 	font-family: serif;	
 	order: 4;
