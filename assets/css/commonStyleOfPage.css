@@ -22,18 +22,37 @@ body
 
 }
 
-
-
-
  header
-{
-	order:1;
-	background-color: darkgray;
-	border-bottom:2px solid black;
+{	
 
+  order: 1;	
+  line-height: 2;
+  background-color: darkgray;
+  border-bottom:2px solid black;
+  border-bottom-left-radius: 20% 120%;
+  border-bottom-right-radius: 20% 120%;
 }
 
 
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-left: 8em;
+}
+
+.button:hover
+{
+	padding: 1.2em;
+}
 .main-content
 {
 	
