@@ -5,35 +5,120 @@ body
   image-rendering: smooth;
 }
 
+.Menu { grid-area: menu; }
+.Main { grid-area: main; }
+.Footer { grid-area: footer; }
+
 .grid-container
 {
-  border:10px solid blue;
+  grid-template-areas:
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  height: 100vh;
+  display: grid;
+  overflow:auto; 
 }
-.grid-container > .header
+
+#menu-tab1
 {
-    border:10px solid green;
+  background-image: url("../img/woods.jpg");
+  background-size: 680px 500px;
+  background-position: top;
+  image-rendering: smooth;
 }
+
+#menu-tab2
+{  background-image: url("../img/aboutUs.jpg");
+  background-size: 420px 500px;
+  background-position: center;
+  image-rendering: smooth;
+}
+
+#menu-tab3
+{
+  background-image: url("../img/events.jpg");
+  background-size: 500px 300px;
+  background-position: top;
+  image-rendering: smooth;
+}
+
+#menu-tab4
+{
+  background-image: url("../img/contactUs.jpg");
+  background-size: 500px 300px;
+  background-position: top;
+  image-rendering: smooth;
+}
+
 
 .grid-container > .Menu
 {
-    border:10px solid yellow;
+  text-align: center;
+  display: grid;
+  grid-gap: 2vh;
+  color: lightgreen;
 }
 
-.grid-container > .Main
-{
-    border:10px solid red;
+.menu-item > #menu-tab1,#menu-tab2,#menu-tab3,#menu-tab4
+{ 
+  border:2px solid black;
+  display:inline-block; 
+  border-radius: 10px;
+  height:18em; 
+  width:14em; 
+  text-decoration:none;
+  color: lightgreen;
+  padding: 2em;
+  font-size: 0.8em;
+  font-style: bold;
 }
 
-.grid-container > .Right
+.main-item
 {
-    border:10px solid purple;
+
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: grey;
+
+}
+
+.main-item > img
+{
+  margin-left: 1vh;
+  margin-top: 1vh;
+  height: 30%;
+  border:2px solid black;
+  border-radius: 15px;
+}
+
+
+.Main
+{
+    display: grid;  
+    margin: auto;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    grid-gap: .8%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .grid-container > .Footer
 {
-    border:10px solid khaki;
+    margin-top: 4em;
+    color:white;
+    background-color: black;
+    font-size: 0.7em;
+    font-family: serif; 
 }
 
+.img_right{
+  border:2px solid black;
+  border-radius: 10px;
+  margin-left: 2em;
+  margin-right: 1em;
+  float:right;
+}
 
 * {
     box-sizing: border-box;
