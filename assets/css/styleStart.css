@@ -20,6 +20,7 @@ video{
 
 body
 {
+
 	background-image: url("../img/woods.jpg");
 	background-size: cover;
 	image-rendering: smooth
@@ -30,6 +31,7 @@ body
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
+	overflow:auto; 
 	position: absolute;
 }
 
@@ -42,8 +44,10 @@ body
 
 .flex-container
  {
-  	margin:auto;
+ 	 align-items: center;
+  	justify-content: center;
   	position: center;
+  	margin: auto;
   	font-size: 1.9em;
  	order:2;
 
@@ -54,6 +58,7 @@ body
 	order:3;
 	flex:1;
 }
+
 footer
 {
 	order:4;
@@ -61,8 +66,8 @@ footer
 	color: white;
 	font-family: sans-serif;
 	font-size: 0.7em;
+	width: 100%;
 }
-
 
 .flex-container > a
 {
@@ -80,6 +85,7 @@ footer
 	padding: 2em;
 	font-size: 0.8em;
 	font-style: bold;
+
 }
 
 
@@ -122,6 +128,7 @@ footer
 }
 
 
+
 .flex-container > #tab1:hover,
 .flex-container > #tab2:hover,
 .flex-container > #tab3:hover,
@@ -131,12 +138,15 @@ footer
 }
 
 
-@media all and (max-width: 920px) {
-    .container 
-    {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
+@media (max-width: 1024px){
+	.flex-container
+	{
+		margin-left:1.2em; 		
+	}
+
+} 
+
+
+
    
 
