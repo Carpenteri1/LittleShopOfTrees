@@ -138,13 +138,37 @@ footer
 }
 
 
+
+
 @media (max-width: 1024px){
 	.flex-container
 	{
-		margin-left:1.2em; 		
+		margin-left:1.2em; 
+		font-size:1em;
+		padding: 2em; 
+
+		 align-items: center;
+  	justify-content: center;
+  	position: center;
+  	margin: auto;
+  	font-size: 1em;		
 	}
 
 } 
+
+@media (max-width: 900px)
+{
+	.flex-container
+	{
+	align-items: center;
+  	justify-content: center;
+  	position: center;
+  	margin: auto;
+  	font-size: 1.9em;
+  	order:2;
+  		
+	}
+}
 
 
 
