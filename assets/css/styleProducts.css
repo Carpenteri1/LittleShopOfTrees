@@ -1,46 +1,42 @@
-.content  
+body
+{ 
+  background-image: url("../img/woods.jpg");
+  background-size: cover;
+  image-rendering: smooth;
+}
+
+.grid-container
 {
-  position: absolute;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  background-color: black;
-
+  border:10px solid blue;
 }
-
-.grid-container {
-  display: grid;
-  grid-column-gap: 2em;
-  grid-gap: 1em;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.left-sidebar
+.grid-container > .header
 {
-	flex:1;
-	order: 1;
+    border:10px solid green;
 }
 
-.mainBlock
+.grid-container > .Menu
 {
-	flex:2;
-	order:2;
-	min-height: 90vh;
-	color:black;
+    border:10px solid yellow;
 }
 
-.right-sidebar
+.grid-container > .Main
 {
-	flex:1;
-	order: 3;
+    border:10px solid red;
 }
+
+.grid-container > .Right
+{
+    border:10px solid purple;
+}
+
+.grid-container > .Footer
+{
+    border:10px solid khaki;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
