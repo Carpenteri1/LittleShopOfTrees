@@ -85,7 +85,6 @@ body
 .main-item > img
 {
   margin-left: 1vh;
-  margin-top: 1vh;
   height: 30%;
   border:2px solid black;
   border-radius: 15px;
@@ -97,9 +96,10 @@ body
     display: grid;  
     margin: auto;
     position: relative;
-    height: 100%;
     width: 80%;
-    grid-gap: .8%;
+    height: 100%;
+    grid-row-gap: 14%;
+    grid-column-gap: 2%;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
