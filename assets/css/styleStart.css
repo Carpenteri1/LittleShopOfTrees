@@ -1,6 +1,17 @@
 
 
 /* Style the video: 100% width and height to cover the entire window */
+
+
+body
+{
+
+	background-image: url("../img/woods.jpg");
+	background-size: cover;
+	image-rendering: smooth
+}
+
+
 video{
   position: absolute;
   right: 0;
@@ -16,15 +27,6 @@ video{
     margin: 0;
 }  
 
-
-
-body
-{
-
-	background-image: url("../img/woods.jpg");
-	background-size: cover;
-	image-rendering: smooth
-}
 .container
 {
   	display: flex;
