@@ -15,9 +15,8 @@ body
   grid-template-areas:
     'menu main main main main main'
     'footer footer footer footer footer footer';
-  height: 100vh;
   display:grid;
-  overflow:auto; 
+ 
 }
 
 #menu-tab1
@@ -56,7 +55,6 @@ body
 {
   text-align: center;
   grid-gap: 2vh;
-  height: 100vh;
   color: lightgreen;  border:2px solid red;
 
 }
@@ -66,8 +64,8 @@ body
 { 
   border:2px solid black;
   display:inline-block; 
-  border-radius: 10px;
-  height:18em; 
+  border-radius: 100%;
+  height:14em; 
   width:14em; 
   text-decoration:none;
   color: lightgreen;
@@ -78,26 +76,18 @@ body
 }
 
 
-.Main
-{
-  display: grid;
-  height: 100vh;
-  border:2px solid green;
-
-}
-
 .main-item
 {
   border: 5px solid black;
   border-radius: 12px;
   background-color: grey;
+  opacity: 80%;
 }
 
 .main-item > img
 {
-  margin-left: 1vh;
-  height: 30%;
-  width: 30%;
+  height: 20%;
+  width: 20%;
   border:2px solid black;
   border-radius: 80%;
 }
@@ -107,88 +97,11 @@ body
 
     display:grid;  
     margin: auto;
-    width: 90%;
-    height: 100%;
-    grid-row-gap: 0%;
-    grid-column-gap: 0%;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-
-
-
-  @media (min-height:550px)
-{
-    .menu-item
-    {
-      height: 12vh;
-      width: 20vh;
-    }
-    .menu-item > #menu-tab1,#menu-tab2,#menu-tab3,#menu-tab4
-    {
-      display: table-row;
-      position: fixed;
-      height: 10%;
-      width: 10%;
-      margin-left: 2vh;
-      border-radius: 100%;
-    }
-}
-
-@media(min-height: 1024px)
-{
-  .Main
-  {
-    display: grid;
     height: 100vh;
-    border:10px solid blue;
-  }
-  .menu-item
-  {
-    width: 20vh;
-    border:10px pink; 
-  }
-}
-
-
-@media (min-height: 1366px)
-{
-  .Main
-  {  
-    display:table-column;
-  }  
-  .main-item
-  {
-
-     grid-gap: 20%;
-     height: 10vh;
-  }
-  .main-item > img
-  {
-
-    height: 40%;
-    width: 10%;
-    border:2px solid black;
-    border-radius: 80%;
-  }
-
-  .grid-container
-  {
-    overflow:auto;
-  }
-
-  footer
-  {
-    height: 100%;
-  }
-} 
-
-@media(min-height: 400px)
-{
-  .grid-container > .Main
-  {
-      height: 100%;
-      border:2px solid pink;
-  }
+    border:2px solid yellow;
+    grid-column-gap: 0vh;
+    grid-row-gap: 2vh;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 

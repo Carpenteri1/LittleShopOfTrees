@@ -17,9 +17,6 @@ body
 {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	overflow:auto; 
-
 }
 
  header
@@ -58,7 +55,8 @@ body
 	
 	position:center;
 	margin: auto;
-	width: 40%;
+	width: 60%;
+
 	order: 2;
 	color: black;
 	border:2px solid black;
@@ -74,6 +72,7 @@ footer
 	font-size: 0.7em;
 	font-family: serif;	
 	order: 4;
+	flex:1;
 }
 
 {
@@ -81,9 +80,6 @@ footer
     padding: 0;
     margin: 0;
 } 
-
-
-
 
 
 .img_left{
@@ -116,10 +112,6 @@ footer
 }
 
 
-
-
-
-
 .tabs > form,input 
 {
 	border: 2px green;
@@ -143,18 +135,11 @@ footer
 }
 
 
-
-@media all and (min-height: 600px)
+@media(max-width: 900px)
 {
-	.content
+	.main-content
 	{
-		flex-direction: column;
-		flex-wrap: wrap;
+
 	}
 }
 
-@media all and (min-width: 720px) {
-    .content {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }

@@ -72,15 +72,16 @@ footer
 {
 
 	border:2px solid black;
+	border-radius: 100%;
 	background-color: lightgrey; 
 	display:inline-block; 
-	border-radius: 10px;
-	height:14em; 
-	width:12em; 
+	height:10em; 
+	width:10em; 
 	position: center;
 	text-align: center;
 	text-decoration:none;
-	color: lightgreen;
+	color: 	black;
+	text-shadow: 2px 1px gray;
 	padding: 2em;
 	font-size: 0.8em;
 	font-style: bold;
@@ -103,8 +104,8 @@ footer
 {
 	
 	background-image: url("../img/aboutUs.jpg");
-	background-size: 450px 600px;
-	background-position: top;
+	background-size: 300px 300px;
+	background-position: center;
 	image-rendering: smooth;
 }
 
@@ -113,7 +114,7 @@ footer
 
 	background-image: url("../img/events.jpg");
 	background-size: 450px 500px;
-	background-position: top;
+	background-position: center;
 	image-rendering: smooth;
 
 }
@@ -121,8 +122,8 @@ footer
 .flex-container > #tab4
 {
 	background-image: url("../img/contactUs.jpg");
-	background-size: 450px 480px;
-	background-position: top;
+	background-size: 550px 400px;
+	background-position: center;
 	image-rendering: smooth;
 }
 
@@ -132,10 +133,10 @@ footer
 .flex-container > #tab3:hover,
 .flex-container > #tab4:hover
 {
-	font-size: 1em;
+	font-size: 1.8em;
 }
 
-@media (max-width: 1080px){
+@media (max-width: 2000px){
 	.flex-container
 	{
 		display:grid-row;
@@ -152,41 +153,55 @@ footer
 	}
 } 
 
-@media (max-width: 1020px)
+
+
+
+@media(max-width: 800px)
 {
 	.flex-container
 	{
-	align-items: center;
-  	justify-content: center;
-  	position: center;
-  	order:2;
-  	font-size: 0.8em;
+		
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
 	}
-		.flex-container > #tab1,#tab2,#tab3,#tab4
+	.flex-container > a 
+	{
+		height:10em; 
+		width:6em; 
+	}
+
+	.flex-container > #tab1,#tab2,#tab3,#tab4
+	{
+		display: flex; 
+  		flex-basis: calc(50% - 40px);  
+  		justify-content: center;
+  		flex-direction: column;
+  		pointer-events: ;
+	}
+	.flex-container > #tab1:hover,
+	.flex-container > #tab2:hover,
+	.flex-container > #tab3:hover,
+	.flex-container > #tab4:hover
 	{
 		font-size: 1em;
 	}
-	.container
-	{
-		align-items: center;
-  		justify-content: center;
-  		position: center;
-	}
-
-	footer
-	{
-		width: 100%;
-	}
 }
 
-
-@media (max-width: 750px)
+@media (max-width: 480px)
 {
 	.flex-container
 	{
 		display:grid;
 	}
+	.flex-container > a 
+	{
+		height:10em; 
+		width:10em; 
+	}
+	
 		.flex-container > #tab1,#tab2,#tab3,#tab4
+	
 	{
 		font-size: 1em;
 	}
