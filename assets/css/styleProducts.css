@@ -3,6 +3,7 @@ body
   background-image: url("../img/woods.jpg");
   background-size: cover;
   image-rendering: smooth;
+   
 }
 
 .Menu { grid-area: menu; }
@@ -55,8 +56,11 @@ body
 {
   text-align: center;
   grid-gap: 2vh;
-  color: lightgreen;
+  height: 100vh;
+  color: lightgreen;  border:2px solid red;
+
 }
+
 
 .menu-item > #menu-tab1,#menu-tab2,#menu-tab3,#menu-tab4
 { 
@@ -70,6 +74,16 @@ body
   padding: 2em;
   font-size: 0.8em;
   font-style: bold;
+  
+}
+
+
+.Main
+{
+  display: grid;
+  height: 100vh;
+  border:2px solid green;
+
 }
 
 .main-item
@@ -101,6 +115,7 @@ body
 }
 
 
+
   @media (min-height:550px)
 {
     .menu-item
@@ -125,6 +140,7 @@ body
   {
     display: grid;
     height: 100vh;
+    border:10px solid blue;
   }
   .menu-item
   {
@@ -166,10 +182,19 @@ body
   }
 } 
 
+@media(min-height: 400px)
+{
+  .grid-container > .Main
+  {
+      height: 100%;
+      border:2px solid pink;
+  }
+}
+
+
 .grid-container > .Footer
 {
     color:white;
-    margin-top: 1em;
     background-color: black;
     font-size: 0.7em;
     font-family: serif;
