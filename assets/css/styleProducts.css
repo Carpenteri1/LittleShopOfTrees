@@ -46,8 +46,8 @@ body
   width: 80%;
   height: 100%;
   text-align: center;
-  text-shadow: 2px 1px black;
-  color: red;
+  color: #FF4500 ;
+  text-shadow: 1px 1px black;
   border:2px solid black;
   border-radius: 100%;
   text-decoration: none;
@@ -59,7 +59,7 @@ body
 .menu-item > #menu-tab1
 {
   background-image: url("../img/woods.jpg");
-  background-size: 300px 250px;
+  background-size: 200px 250px;
 
 }
 
@@ -126,7 +126,6 @@ body
 
 .footer
 {
-  border:2px solid green;
   grid-row: 2;
   grid-column: 1 / span 8 ;
   background-color: black;
@@ -141,7 +140,7 @@ body
 
   .menu
   {
-    border:2px solid black;
+    position: sticky;
     height: 80vh;
     margin: auto;
   }
@@ -328,7 +327,7 @@ body
 
 
 
-@media screen and (min-width: 1000px)
+@media screen and (min-width: 1080px)
 {
 
     .menu-item  > #menu-tab1,#menu-tab2,#menu-tab3,#menu-tab4
