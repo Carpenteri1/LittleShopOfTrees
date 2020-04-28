@@ -82,7 +82,7 @@ footer
 	position: center;
 	text-align: center;
 	text-decoration:none;
-  	color: #FF4500 ;
+  	color: #FF4500;/*<-- orange*/
   	text-shadow: 1px 1px black;
 	padding: 2em;
 	font-size: 0.8em;
@@ -98,7 +98,7 @@ footer
 
 	background-image: url("../img/products.jpg");
 	background-size: 290px 290px;
-	background-position: center;
+	background-position: center;	
 	image-rendering: smooth;
 }
 
