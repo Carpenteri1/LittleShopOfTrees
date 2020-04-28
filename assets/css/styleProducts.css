@@ -59,7 +59,7 @@ body
 .menu-item > #menu-tab1
 {
   background-image: url("../img/woods.jpg");
-  background-size: 200px 250px;
+  background-size: 300px 250px;
 
 }
 
@@ -149,7 +149,7 @@ body
   {
       width: 45%;
       height:60%;
-      font-size: 0.6em;
+      font-size: 0.8em;
       margin: auto;
     
   }
@@ -241,7 +241,7 @@ body
   {
       width: 60%;
       height:80%;
-      font-size: 0.8em;
+      font-size: 1.2em;
       margin: auto;
   }
      a > p
@@ -335,6 +335,7 @@ body
       width: 80%;
       height:100%;
       margin: auto;
+      font-size: 1.4em;
 
     }
 
