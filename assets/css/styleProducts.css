@@ -230,6 +230,12 @@ body
       grid-row: 9;
       grid-column: 1;
   } 
+
+  .footer
+  {
+    font-size: 0.2em;
+    width: 100%;
+  }
 }
 
 

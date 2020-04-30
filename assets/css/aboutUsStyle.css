@@ -1,4 +1,4 @@
-	
+
 
 body
 {
@@ -17,13 +17,24 @@ body
 	height: 100vh;
 }
 	
-.container > header
+header
 {
-	order:1;
 	width: 100%;
 	height: 12%;
-}	
-/*#region rules for tabs-content and child */	
+
+}
+
+.left-sidebar
+{
+  	border:2px solid red;
+	opacity: 0%;
+	order:1;
+	flex:1;
+}
+
+
+/*#region rules for tabs*/
+
 .tabs
 {
 	display:flex;
@@ -31,8 +42,10 @@ body
 	height: 100%;
 	width: 100%;	
 }
+
 .tabs > a
-{
+{ 
+
 	background-position: center;	
 	image-rendering: smooth;
 	border-radius: 25%;
@@ -48,7 +61,7 @@ body
 }
 
 .tabs > #tab1
-{	
+{
 	background-image: url("../img/woods.jpg");
   	background-size: 350px 280px;
 }
@@ -61,75 +74,61 @@ body
 .tabs > #tab3
 {
 	background-image: url("../img/aboutUs.jpg");
-	background-size: 350px 280px;
+	background-size: 350px 280px; 
 }
 .tabs > #tab4
 {
 	background-image: url("../img/contactUs.jpg");
 	background-size: 550px 400px;
 }
-/*#end-region*/
-
-/*#region lift right tab*/
-.right-sidebar
-{
-	opacity: 0%;
-	border:2px solid black;
-	order:3;
-	flex:1;
-}
-.left-sidebar
-{	
-	opacity: 0%;
-	border:2px solid black;
-	order:1;
-	flex:1;
-}
-/*#end-region*/
+/*#end region*/
 
 
-/*#region rule for main-content and child*/
+
+
+/*#region- rule for main-content and child*/
+
 .main-content
 {
 	order:3;
-	flex:2;
 	min-height: 80vh;
 	background-color: white;
 	border:2px solid black;
 	border-radius: 12%;
 }
-.main-content >form
+.main-content > p,a
 {
-	margin-left:10%;
-	overflow:auto;
-	
+	text-align: center;	
+	margin-left: 2em;
+	font-size: 1.1em;
 }
 
 .main-content > h1
 {
-	margin-left:1.2em; 
+	text-align: center;
+	margin-left: 0.5em;
 }
 
-.main-content > button
-{	
-	margin-left:65%; 
-	margin-bottom: 20%;	
-}
-
-.main-content > #textarea
+.main-content > h2,h3
 {
-	margin-left:10%;
-	height: 40%;
-	width: 70%;
-	resize: none;
-
+	text-align: center;
+	margin-left: 1em;
 }
-/*#end-region*/
+
+
+/*#endregion*/
+.right-sidebar
+{
+	border:2px solid red;
+	opacity: 0%;
+	order:3;
+	flex:1;
+}
 
 
 footer
 {	
-	order:4;
+	order:5;
 	width: 100%;
 	background-color: black;
 	color: white;
@@ -137,43 +136,25 @@ footer
 	font-size: 0.7em;	
 }
 
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }  
 
-/*#region img and layout rules for text*/
-.img_left{
-	border:1px solid black;
-	float:left;
-	margin-left:4vh; 
-	margin-top:0.5em; 
-}
-.img_right
-{
-	border:1px solid black; 
-	float:right;
-	margin-right:4vh; 
-}
-
 .makeSpace
 {
 	height: 10vh;
-	display: block;
+	display: table;
     clear: both;
 }
 
 .makeSmallSpace
 {
 	height: 4vh;
-	display: block;
+	display: table;
     clear: both;
 }
-/*#end-region*/
-
-
 
 
 @media (max-width: 800px)
@@ -205,37 +186,43 @@ footer
 		border-radius: 100%;
 	}
 
-	.right-sidebar
-	{
-		display:none;
-		order:2;
-		flex:1;
-	}
-
-	.main-content
-	{	
-		flex:3;
-		order:2;
-		width: 60vh;
-	}
-
 	.left-sidebar
 	{
-		display: none;
+		order:2;
+		flex:0;
+	}
+	.right-sidebar
+	{
 		order:3;
 		flex:0;
 	}
 
-	.main-content > button
-	{
-		font-size: 0.6em;
-		overflow: auto;
+	.main-content
+	{	
+		width: 60%;
+		flex:2;
+		order:2;
 	}
 
+	.main-content > img
+	{
+		width: 20%;
+		height: 8%;
+	}
+
+	.main-content > p
+	{
+		font-size: 0.9em;
+	}
+
+	.main-content > h1,h2
+	{
+		font-size: 1.2em;
+	}
 
 	.container > footer
 	{	
-		order:4;
+		order:3;
 		width: 100%;
 	}
 
@@ -249,32 +236,83 @@ footer
 
 @media(max-width: 550px)
 {
-
-	.main-content > button
+	.main-content > img
 	{
-		font-size: 0.5em;
-		margin-bottom:1.8em; 
+		width: 16%;
+		height: 6%;
 	}
-		.main-content > h1
+	.main-content > p
 	{
-		font-size: 1em;
+		font-size: 0.8em;
+	}
+
+		.main-content > h1,h2,h3
+	{
+		font-size: 0.8em;
 	}
 }
 
 
 
-
-
-@media(max-width: 400px)
+@media(max-width: 407px)
 {
-
-	.main-content > button
+		.tabs > a
 	{
-		font-size: 0.3em;
-	}
-		.main-content > h1
-	{
+		width: 20%;
+		height: 50%;
 		font-size: 0.5em;
 	}
+	.main-content > img
+	{
+		width: 12%;
+		height: 4%;
+	}
+
+
+
+	.main-content > p
+	{
+		font-size: 0.6em;
+	}
+
+		.main-content > h1,h2,h3
+	{
+		font-size: 0.6em;
+	}
+
+
+	footer
+	{
+		font-size: 0.1em;
+	}
+
 }
 
+
+@media(max-width: 270px)
+{
+		.tabs > a
+	{
+		width: 20%;
+		height: 50%;
+		font-size: 0.5em;
+	}
+	.main-content > img
+	{
+		width: 12%;
+		height: 4%;
+	}
+
+
+
+	.main-content > p
+	{
+		font-size: 0.4em;
+	}
+
+		.main-content > h1,h2,h3
+	{
+		font-size: 0.4em;
+	}
+
+}
