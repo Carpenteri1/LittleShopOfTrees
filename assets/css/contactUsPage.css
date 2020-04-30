@@ -50,18 +50,18 @@ body
 .tabs > #tab1
 {	
 	background-image: url("../img/woods.jpg");
-  	background-size: 350px 280px;
+  	background-size: 550px 500px;
 }
 
 .tabs > #tab2
 {
 	background-image: url("../img/products.jpg");
-	background-size: 350px 290px;
+	background-size: 550px 290px;
 }
 .tabs > #tab3
 {
 	background-image: url("../img/aboutUs.jpg");
-	background-size: 350px 280px;
+	background-size: 550px 280px;
 }
 .tabs > #tab4
 {
