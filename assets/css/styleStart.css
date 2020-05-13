@@ -135,7 +135,9 @@ footer
 .flex-container > #tab3:hover,
 .flex-container > #tab4:hover
 {
-	font-size: 1.8em;
+	width: 14em;
+	height: 14em;
+	transition: 0.8s;
 }
 
 @media (max-width: 2000px){
