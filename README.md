@@ -1,5 +1,5 @@
 # LittleShopOfTrees
-A place where you can find the best deals for trees. Made as a lab project.
+A place where you can find the best deals for trees. School project.
 
 # Start Page Link
 https://carpenteri1.github.io/LittleShopOfTrees/startPage.html
